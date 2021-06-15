@@ -1,0 +1,106 @@
+.default {
+  background-color: #d0dae0;
+  padding: 1rem;
+  box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  color: black;
+
+  input {
+    &:focus {
+      background-color: #a0aaad;
+    }
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: -5px;
+    border-width: 0;
+    outline: 0;
+    font-size: 16px;
+    margin-bottom: 5px;
+    width: 97%;
+  }
+
+  & .container {
+    margin-bottom: 1rem;
+
+    & .contents {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & .label {
+      font-size: 12px;
+      color: #656f72;
+    }
+
+    & .localeImage {
+      width: 1rem;
+      margin-top: 5px;
+    }
+  }
+}
+
+.hookTheme {
+  background-color: #e8121b;
+  color: #f6f0e4;
+  font-weight: bold;
+
+  input {
+    &:focus {
+      background-color: #ffffff;
+      color: black;
+    }
+    color: #f6f0e4;
+  }
+
+  & .container {
+    border-bottom: 2px solid black;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    & .label {
+      color: #000000;
+      font-weight: bold;
+    }
+  }
+}
+
+.componentTheme {
+  background-color: #dca71d;
+  text-align: center;
+  font-family: RollingBold;
+
+  input {
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-family: RollingBold;
+
+    &:focus {
+      background-color: #a57316;
+      color: black;
+    }
+  }
+
+  & .container {
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    & .label {
+      font-family: Roboto;
+      color: #a57316;
+      font-weight: bold;
+      position: relative;
+      margin-bottom: 5px;
+    }
+  }
+}
