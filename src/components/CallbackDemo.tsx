@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Counter from "./callback/Counter";
 import Number from "./callback/Number";
 import Todo from "./callback/Todo";
+import { useDocumentTitle } from "./hooks/useDocumentTitle";
+import "./layout/CallbackDemo.scss";
 
 const CallbackDemo = () => {
+  useDocumentTitle("useCallback Demo");
   console.log("Render CallbackDemo");
 
   //init items for Todo
@@ -32,7 +35,7 @@ const CallbackDemo = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <Todo items={items} add={add} />
       <Number number={number} />
       <Counter incr={increase} decr={decrease} />

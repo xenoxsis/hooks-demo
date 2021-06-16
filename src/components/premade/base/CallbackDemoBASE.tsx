@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Counter from "../callback/Counter";
-import Number from "../callback/Number";
-import Todo from "../callback/Todo";
+import Counter from "../../callback/Counter";
+import Number from "../../callback/Number";
+import Todo from "../../callback/Todo";
 
 const CallbackDemo = () => {
   console.log("Render CallbackDemo");

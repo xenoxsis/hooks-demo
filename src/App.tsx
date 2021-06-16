@@ -2,8 +2,8 @@ import "./App.scss";
 import HookGreetings from "./components/GreetingsHooksDemo";
 import CompGreetings from "./components/GreetingsCompDemo";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import React from "react";
 import CallbackDemo from "./components/CallbackDemo";
+import ReducerDemo from "./components/ReducerDemo";
 
 function App() {
   return (
@@ -18,6 +18,9 @@ function App() {
           </Route>
           <Route path="/callback">
             <CallbackDemo />
+          </Route>
+          <Route path="/reducer">
+            <ReducerDemo />
           </Route>
         </Switch>
       </Router>

@@ -1,6 +1,6 @@
 import React from "react";
-import Row from "../layout/Row";
-import Section from "../layout/Section";
+import Row from "../../layout/Row";
+import Section from "../../layout/Section";
 
 interface Props {
   name?: string;
