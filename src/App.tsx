@@ -4,6 +4,7 @@ import CompGreetings from "./components/GreetingsCompDemo";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CallbackDemo from "./components/CallbackDemo";
 import ReducerDemo from "./components/ReducerDemo";
+import About from "./components/layout/About";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/reducer">
             <ReducerDemo />
+          </Route>
+          <Route exact path="/">
+            <About />
           </Route>
         </Switch>
       </Router>

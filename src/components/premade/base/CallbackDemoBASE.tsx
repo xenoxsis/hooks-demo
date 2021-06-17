@@ -32,7 +32,7 @@ const CallbackDemo = () => {
   };
 
   return (
-    <div>
+    <div className="callback-container">
       <Todo items={items} add={add} />
       <Number number={number} />
       <Counter incr={increase} decr={decrease} />
