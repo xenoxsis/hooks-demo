@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 interface Props {
   incr: () => void;
   decr: () => void;
@@ -13,4 +15,4 @@ const Counter = (props: Props) => {
   );
 };
 
-export default Counter;
+export default memo(Counter);

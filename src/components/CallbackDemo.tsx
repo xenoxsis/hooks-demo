@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Counter from "./callback/Counter";
 import Number from "./callback/Number";
 import Todo from "./callback/Todo";
@@ -20,19 +20,19 @@ const CallbackDemo = () => {
   const [number, setNumber] = useState(0);
 
   //add items for Todo
-  const add = () => {
+  const add = useCallback(() => {
     setItems(() => [...items, "New todo"]);
-  };
+  }, [items]);
 
   //handler function for Counter
-  const increase = () => {
+  const increase = useCallback(() => {
     setNumber(number + 1);
-  };
+  }, [number]);
 
   //handler function for Counter
-  const decrease = () => {
+  const decrease = useCallback(() => {
     setNumber(number - 1);
-  };
+  }, [number]);
 
   return (
     <div className="callback-container">

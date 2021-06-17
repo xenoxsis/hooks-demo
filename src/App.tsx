@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/hook">
-            <HookGreetings name="Mary" />
+            <HookGreetings />
           </Route>
           <Route path="/comp">
             <CompGreetings name="Mary" />

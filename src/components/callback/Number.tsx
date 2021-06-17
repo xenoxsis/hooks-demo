@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 interface Props {
   number: number;
 }
@@ -12,4 +14,4 @@ const Number = (props: Props) => {
   );
 };
 
-export default Number;
+export default memo(Number);

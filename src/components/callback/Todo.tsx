@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 interface Props {
   items: string[];
   add: () => void;
@@ -16,4 +18,4 @@ const Todo = (props: Props) => {
   );
 };
 
-export default Todo;
+export default memo(Todo);

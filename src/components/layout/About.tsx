@@ -8,7 +8,7 @@ const About = () => {
     if (!show) {
       return (
         <div className="link" onClick={() => setShow(true)}>
-          <h1>About Hooks</h1>
+          <h1>Concerning Hooks</h1>
         </div>
       );
     } else {
